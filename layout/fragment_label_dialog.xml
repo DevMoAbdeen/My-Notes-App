@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:context=".fragmenst.LabelDialogFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:boxStrokeColor="@color/main"
+        app:hintTextColor="@color/main">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_labelName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_label"
+            android:drawablePadding="16dp"
+            android:hint="@string/label_name"
+            android:inputType="text"
+            android:textColor="@color/main"
+            android:textColorHint="#000000" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/about"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:boxStrokeColor="@color/main"
+        app:hintTextColor="@color/main">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_aboutLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:drawableStart="@drawable/ic_about"
+            android:drawablePadding="16dp"
+            android:hint="@string/about"
+            android:inputType="text"
+            android:textColor="@color/main"
+            android:textColorHint="#000000" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_add"
+            android:text="@string/add_label"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:backgroundTint="@color/main"
+            android:padding="8dp"
+            app:cornerRadius="3dp"
+            android:layout_marginEnd="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_cancel"
+            android:text="@string/cancel"
+            android:textColor="@color/black"
+            android:backgroundTint="@color/white"
+            android:padding="8dp"
+            app:cornerRadius="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>
